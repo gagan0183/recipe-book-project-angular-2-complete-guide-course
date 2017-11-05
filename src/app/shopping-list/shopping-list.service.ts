@@ -19,4 +19,8 @@ export class ShoppingListService {
   editItem(oldIngredient: Ingredient, newIngredient: Ingredient) {
     this.items[this.items.indexOf(oldIngredient)] = newIngredient;
   }
+
+  deleteItem(ingredient: Ingredient) {
+    this.items.splice(this.items.indexOf(ingredient), 1);
+  }
 }
