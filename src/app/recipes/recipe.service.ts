@@ -14,6 +14,14 @@ export class RecipeService {
   ];
   constructor() { }
 
+  addItem(recipe: Recipe) {
+    this.recipes.push(recipe);
+  }
+
+  editItem(oldRecipe: Recipe, newRecipe: Recipe) {
+    this.recipes[this.recipes.indexOf(oldRecipe)] = newRecipe;
+  }
+
   getRecipes() {
     return this.recipes;
   }
