@@ -80,6 +80,7 @@ export class RecipeEditComponent implements OnInit {
                 Validators.required,
                 Validators.pattern("\\d+")
               ])
+
         })
     );
   }
